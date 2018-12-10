@@ -1,0 +1,138 @@
+﻿<Window x:Class="StopLight.MainWindow"
+xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+Title="MainWindow" Height="467.8" Width="525">
+    <Grid>
+        <Canvas x:Name="LightNumber1" HorizontalAlignment="Left" Height="133" Margin="25,145,0,0" VerticalAlignment="Top" Width="46">
+            <Ellipse x:Name="Light1Green"
+                Fill="LightGray"
+                Height="36"
+                Width="39"
+                StrokeThickness="2"
+                Stroke="Black" Canvas.Top="92"/>
+            <Ellipse x:Name="Light1Yellow"
+                Fill="LightGray"
+                Height="36"
+                Width="39"
+                StrokeThickness="2"
+                Stroke="Black" Canvas.Top="51"/>
+            <Ellipse x:Name="Light1Red"
+                Fill="Red"
+                Height="36"
+                Width="39"
+                StrokeThickness="2"
+                Stroke="Black" Canvas.Top="10"/>
+        </Canvas>
+        <Canvas x:Name="LightNumber3" HorizontalAlignment="Left" Height="133" Margin="452,145,0,0" VerticalAlignment="Top" Width="46">
+            <Ellipse x:Name="Light3Green"
+                Fill="Green"
+                Height="36"
+                Width="39"
+                StrokeThickness="2"
+                Stroke="Black" Canvas.Top="92"/>
+            <Ellipse x:Name="Light3Yellow" 
+                Fill="LightGray"
+                Height="36"
+                Width="39"
+                StrokeThickness="2"
+                Stroke="Black" Canvas.Top="51"/>
+            <Ellipse x:Name="Light3Red"
+                Fill="LightGray"
+                Height="36"
+                Width="39"
+                StrokeThickness="2"
+                Stroke="Black" Canvas.Top="10"/>
+        </Canvas>
+        <Canvas x:Name="LightNumber4" HorizontalAlignment="Left" Height="133" Margin="212,295,0,0" VerticalAlignment="Top" Width="46">
+            <Ellipse x:Name="Light4Green"
+                Fill="LightGray"
+                Height="36"
+                Width="39"
+                StrokeThickness="2"
+                Stroke="Black" Canvas.Top="92"/>
+            <Ellipse x:Name="Light4Yellow"
+                Fill="LightGray"
+                Height="36"
+                Width="39"
+                StrokeThickness="2"
+                Stroke="Black" Canvas.Top="51"/>
+            <Ellipse x:Name="Light4Red"
+                Fill="Red"
+                Height="36"
+                Width="39"
+                StrokeThickness="2"
+                Stroke="Black" Canvas.Top="10"/>
+        </Canvas>
+        <Canvas x:Name="LightNumber2" HorizontalAlignment="Left" Height="133" Margin="228,10,0,0" VerticalAlignment="Top" Width="46">
+            <Ellipse x:Name="Light2Green"
+                Fill="LightGray"
+                Height="36"
+                Width="39"
+                StrokeThickness="2"
+                Stroke="Black" Canvas.Top="92"/>
+            <Ellipse x:Name="Light2Yellow"
+                Fill="LightGray"
+                Height="36"
+                Width="39"
+                StrokeThickness="2"
+                Stroke="Black" Canvas.Top="51"/>
+            <Ellipse x:Name="Light2Red"
+                Fill="Red"
+                Height="36"
+                Width="39"
+                StrokeThickness="2"
+                Stroke="Black" Canvas.Top="10"/>
+        </Canvas>
+        <Canvas x:Name="LightNumber4Right" HorizontalAlignment="Left" Height="133" Margin="280,295,0,0" VerticalAlignment="Top" Width="46">
+            <Ellipse x:Name="Light4RightGreenCircle"
+                Fill="Black"
+                Height="36"
+                Width="39"
+                StrokeThickness="2"
+                Stroke="Black" Canvas.Top="92"/>
+            <Ellipse x:Name="Light4RightYellowCircle"
+                Fill="Black"
+                Height="36"
+                Width="39"
+                StrokeThickness="2"
+                Stroke="Black" Canvas.Top="51"/>
+            <Ellipse x:Name="Light4RightRedCircle"
+                Fill="Black"
+                Height="36"
+                Width="39"
+                StrokeThickness="2"
+                Stroke="Black" Canvas.Top="10"/>
+        </Canvas>
+        <Canvas x:Name="LightNumber3Left" HorizontalAlignment="Left" Height="133" Margin="390,145,0,0" VerticalAlignment="Top" Width="46">
+            <Ellipse x:Name="Light3LeftGreenCircle"
+                Fill="Black"
+                Height="36"
+                Width="39"
+                StrokeThickness="2"
+                Stroke="Black" Canvas.Top="92"/>
+            <Ellipse x:Name="Light3LeftYellowCircle"
+                Fill="Black"
+                Height="36"
+                Width="39"
+                StrokeThickness="2"
+                Stroke="Black" Canvas.Top="51"/>
+            <Ellipse x:Name="Light3LeftRedCircle"
+                Fill="Black"
+                Height="36"
+                Width="39"
+                StrokeThickness="2"
+                Stroke="Black" Canvas.Top="10"/>
+        </Canvas>
+        <Button x:Name="btnLeft" Content="Car Stops" HorizontalAlignment="Left" Margin="10,283,0,0" VerticalAlignment="Top" Width="75" Click="newCarWaiting" Tag="0"/>
+        <Button x:Name="btnTop" Content="Car Stops" HorizontalAlignment="Left" Margin="286,10,0,0" VerticalAlignment="Top" Width="75" Click="newCarWaiting" Tag="1"/>
+        <Button x:Name="btnRight" Content="Car Stops" HorizontalAlignment="Left" Margin="432,285,0,0" VerticalAlignment="Top" Width="75" Click="newCarWaiting" Tag="2"/>
+        <Button x:Name="btnBottom" Content="Car Stops" HorizontalAlignment="Left" Margin="331,407,0,0" VerticalAlignment="Top" Width="75" Click="newCarWaiting" Tag="3"/>
+
+        <Polygon x:Name="Light3LeftGreen" Points="0,10 16,0 16,7 30,7 30,13 16,13 16,20  " Stroke="Black" Margin="394,245,81,157" Fill="Green"/>
+        <Polygon x:Name="Light3LeftYellow" Points="0,10 16,0 16,7 30,7 30,13 16,13 16,20  " Stroke="Black" Margin="394,204,81,198" Fill="LightGray"/>
+        <Polygon x:Name="Light3LeftRed" Points="0,10 16,0 16,7 30,7 30,13 16,13 16,20  " Stroke="Black" Margin="394,163,81,239" Fill="LightGray"/>
+        <Polygon x:Name="Light4RightRed" Points="30,10 14,0 14,7 0,7 0,13 14,13 14,20  " Stroke="Black" Margin="286,313,189,89" Fill="LightGray"/>
+        <Polygon x:Name="Light4RightYellow" Points="30,10 14,0 14,7 0,7 0,13 14,13 14,20  " Stroke="Black" Margin="286,353,189,49" Fill="LightGray"/>
+        <Polygon x:Name="Light4RightGreen" Points="30,10 14,0 14,7 0,7 0,13 14,13 14,20  " Stroke="Black" Margin="286,393,189,9" Fill="Green"/>
+    </Grid>
+</Window>
